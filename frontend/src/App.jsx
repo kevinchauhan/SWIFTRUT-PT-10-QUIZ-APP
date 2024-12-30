@@ -1,7 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
 import axios from 'axios';
 import useAuthStore from './store/authStore';
 import { useEffect } from 'react';
