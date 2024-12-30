@@ -12,12 +12,12 @@ const Header = () => {
 
                 {/* Navigation Links */}
                 <nav className="flex space-x-4">
-                    <Link
-                        to="/quizzes"
+                    {/* <Link
+                        to="/"
                         className="text-gray-600 hover:text-gray-800 font-medium"
                     >
                         Quizzes
-                    </Link>
+                    </Link> */}
                 </nav>
             </div>
         </header>

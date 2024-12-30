@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import { ToastContainer } from 'react-toastify';
 import QuizList from './pages/QuizList';
 import QuizPage from './pages/Quiz';
+import ScorePage from './pages/Score';
 
 function App() {
   const { login, logout } = useAuthStore();
@@ -44,7 +45,7 @@ function App() {
           <Routes>
             <Route path="/" element={<QuizList />} />
             <Route path="/quizzes/:id" element={<QuizPage />} />
-
+            <Route path="/quizzes/:id/score" element={<ScorePage />} />
           </Routes>
         </main>
       </div>
