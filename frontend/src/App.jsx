@@ -7,6 +7,7 @@ import useAuthStore from './store/authStore';
 import { useEffect } from 'react';
 import { ToastContainer } from 'react-toastify';
 import QuizList from './pages/QuizList';
+import QuizPage from './pages/Quiz';
 
 function App() {
   const { login, logout } = useAuthStore();
@@ -42,6 +43,8 @@ function App() {
         <main className="flex-grow container mx-auto px-4 py-6">
           <Routes>
             <Route path="/" element={<QuizList />} />
+            <Route path="/quizzes/:id" element={<QuizPage />} />
+
           </Routes>
         </main>
       </div>
